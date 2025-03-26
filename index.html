@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Document Settings -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Page Meta -->
     <title>Interoperabilidad Empresarial - Proyecto Microdata</title>
     <meta name="description" content="Diseño de Servicios de Interconexión e Interoperabilidad para la comunicación de desarrollos Software empresariales" />
 
-    <!-- Mobile Meta -->
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Styles'n'Scripts -->
     <link rel="stylesheet" type="text/css" href="/ualtransfiere/assets/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     <style>
-        .team-member { text-align: center; margin-bottom: 20px; }
-        .team-member img { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; }
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+    .team-member {
+        text-align: center;
+    }
+    .team-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .team-member {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 <body class="home-template nav-closed">
 
 <div class="site-wrapper">
 
-    <header class="main-header" style="background-image: url(/ualtransfiere/assets/images/cover1.jpg)">
+    <header class="main-header" style="background-image: url(/ualtransfiere/assets/images/back.jpg)">
         <nav class="main-nav overlay clearfix">
-            <a class="blog-logo" href="/ualtransfiere/"><img src="/ualtransfiere/assets/images/ghost.png" alt="Blog Logo" /></a>
-            <!-- <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a> -->
             <ul class="nav">
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contenido">Contenido</a></li>
@@ -48,37 +65,92 @@
         <article class="post">
             <section class="post-content" id="contenido">
                 <h2>Diseño de Servicios de Interconexión e Interoperabilidad</h2>
-                <p>La empresa Microdata desarrolla un portal del empleado que necesita interoperabilidad con otras aplicaciones. El objetivo principal del proyecto es estudiar métodos efectivos de conexión con software específico, como <strong>efirma GO</strong> y <strong>Ejornada</strong>, enfatizando escalabilidad, seguridad, robustez, simplicidad y rapidez en el desarrollo.</p>
+                <p>La empresa de software Microdata está desarrollando un <strong>portal del empleado</strong> para mejorar la comunicación interna de recursos humanos, descentralizar tareas administrativas y conectar con otras plataformas clave como <strong>efirma GO</strong> y <strong>Ejornada</strong>. El objetivo es implementar una solución robusta y eficiente que garantice <em>interoperabilidad</em> entre distintos sistemas empresariales.</p>
 
-                <h3>Objetivos Específicos</h3>
+                <h3>Objetivos del Proyecto</h3>
                 <ul>
-                    <li>Análisis de métodos de interconexión.</li>
-                    <li>Implementación y validación empírica del servicio web.</li>
-                    <li>Guía técnica para implementación del portal del empleado.</li>
+                    <li>Diseñar e implementar un sistema de interconexión eficaz entre el portal del empleado y otras aplicaciones clave.</li>
+                    <li>Validar empíricamente la arquitectura de interoperabilidad mediante pruebas piloto.</li>
+                    <li>Producir una guía técnica y un plan de trabajo para su implementación final.</li>
+                    <li>Optimizar en escalabilidad, seguridad, robustez, simplicidad y tiempo de desarrollo.</li>
                 </ul>
 
+                <h3>Aplicaciones Clave</h3>
+                <ul>
+                    <li><strong>efirma GO:</strong> Solución de firma digital para la gestión instantánea de documentos.</li>
+                    <li><strong>Ejornada:</strong> Plataforma para el registro obligatorio de jornada laboral.</li>
+                </ul>
+
+                <h3>Resultados Esperados</h3>
+                <p>El proyecto dará como resultado una propuesta validada de interoperabilidad para Microdata, junto con una guía práctica para implementar servicios web que conecten software empresarial diverso de forma segura y eficiente.</p>
+
                 <h3 id="equipo">Equipo Investigador</h3>
-                <div class="team-member">
-                    <img src="/ualtransfiere/assets/images/members/javier.jpg" alt="Javier Criado Rodríguez">
-                    <p><strong>Javier Criado Rodríguez (IP)</strong></p>
-                </div>
-                <div class="team-member">
-                    <img src="/ualtransfiere/assets/images/members/rosa.jpg" alt="Rosa María Ayala Palenzuela">
-                    <p><strong>Rosa María Ayala Palenzuela</strong></p>
-                </div>
-                <div class="team-member">
-                    <img src="/ualtransfiere/assets/images/members/luis.jpg" alt="Luis Fernando Iribarne Martínez">
-                    <p><strong>Luis Fernando Iribarne Martínez</strong></p>
-                </div>
-                <div class="team-member">
-                    <img src="/ualtransfiere/assets/images/members/antonio-jesus.png" alt="Antonio Jesús Fernández García">
-                    <p><strong>Antonio Jesús Fernández García</strong></p>
-                </div>
-                <div class="team-member">
-                    <img src="/ualtransfiere/assets/images/members/antonio-corral.jpg" alt="Antonio Leopoldo Corral Liria">
-                    <p><strong>Antonio Leopoldo Corral Liria</strong></p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="/ualtransfiere/assets/images/members/javier.jpg" alt="Javier Criado Rodríguez">
+                        <p><strong>Javier Criado Rodríguez (IP)</strong><br>Investigador Postdoctoral</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/ualtransfiere/assets/images/members/rosa.jpg" alt="Rosa María Ayala Palenzuela">
+                        <p><strong>Rosa María Ayala Palenzuela</strong><br>Profesora Titular</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/ualtransfiere/assets/images/members/luis.jpg" alt="Luis Fernando Iribarne Martínez">
+                        <p><strong>Luis Fernando Iribarne Martínez</strong><br>Profesor Titular</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/ualtransfiere/assets/images/members/antonio-jesus.png" alt="Antonio Jesús Fernández García">
+                        <p><strong>Antonio Jesús Fernández García</strong><br>Investigador Postdoctoral</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/ualtransfiere/assets/images/members/antonio-corral.jpg" alt="Antonio Leopoldo Corral Liria">
+                        <p><strong>Antonio Leopoldo Corral Liria</strong><br>Profesor Titular</p>
+                    </div>
                 </div>
 
+                <h3>Becario de Transferencia</h3>
+                <p><strong>Cristian Abel Loza Casillas</strong><br>Participa en todas las fases del proyecto: análisis, pruebas y documentación. Adquiere competencias en desarrollo de servicios web y gestión de proyectos.</p>
+                <h3>Cronograma del Proyecto</h3>
+                <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>Fase</th>
+                            <th>Mes 1-3</th>
+                            <th>Mes 4-8</th>
+                            <th>Mes 9-12</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Análisis Inicial</td>
+                            <td>✔️</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Estudio de Implementación</td>
+                            <td></td>
+                            <td>✔️</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Propuesta Final</td>
+                            <td></td>
+                            <td></td>
+                            <td>✔️</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Información Técnica Adicional</h3>
+                <ul>
+                    <li>El proyecto no contempla protección industrial o patentes.</li>
+                    <li>Se validará una arquitectura basada en <strong>servicios web</strong> para asegurar la interoperabilidad.</li>
+                    <li>Se utilizarán entornos de desarrollo en la <strong>Universidad de Almería</strong> y se contará con infraestructura en la nube.</li>
+                    <li>El presupuesto total asciende a <strong>37.400€</strong>, con cofinanciación de la UAL y la empresa Microdata.</li>
+                    <li>El becario adquirirá habilidades en <em>análisis de servicios web</em>, <em>desarrollo backend</em> y <em>gestión de proyectos</em>.</li>
+                </ul>
+                
             </section>
         </article>
 
