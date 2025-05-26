@@ -1,171 +1,473 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="es">
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <title>Interoperabilidad Empresarial - Proyecto Microdata</title>
-    <meta name="description" content="Diseño de Servicios de Interconexión e Interoperabilidad para la comunicación de desarrollos Software empresariales" />
-
-    <meta name="HandheldFriendly" content="True" />
+    <title>
+      Interoperabilidad Empresarial – Microdata / Universidad de Almería
+    </title>
+    <meta
+      name="description"
+      content="Proyecto Microdata: Diseño de Servicios de Interconexión e Interoperabilidad para la comunicación de desarrollos Software empresariales"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" type="text/css" href="/ualtransfiere/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/ualtransfiere/assets/css/screen.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"
+    />
     <style>
       .team-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
         justify-items: center;
-    }
-    .team-member {
+      }
+      .team-member {
         text-align: center;
-    }
-    .team-member img {
+      }
+      .team-member img {
         border-radius: 50%;
         width: 150px;
         height: 150px;
         object-fit: cover;
-    }
-        @media (max-width: 768px) {
-            .team-member {
-                flex: 1 1 calc(50% - 20px);
-            }
-        }
-        @media (max-width: 480px) {
-            .team-member {
-                flex: 1 1 100%;
-            }
-        }
+      }
+      #financiado {
+        text-align: center;
+        margin: 60px 0 30px;
+      }
+      #financiado h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .financiadores {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-bottom: 60px;
+      }
+      .financiador {
+        max-width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .financiador img {
+        max-width: 180px;
+        height: auto;
+        margin-bottom: 15px;
+        display: block;
+      }
+      .financiador p {
+        margin: 0;
+        line-height: 1.4;
+      }
+      .financiador a {
+        text-decoration: underline;
+      }
+      /* Ajustes para la imagen de arquitectura */
+      #arquitectura img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      /* Cabecera: texto en negro */
+      .main-header .main-header-content h1,
+      .main-header .main-header-content h2 {
+        color: #000;
+      }
+      /* Centrar y dar margen al logo en cabecera */
+      .main-header .main-header-content img {
+        display: block;
+        margin: 10px auto 0;
+        max-width: 150px;
+        height: auto;
+      }
     </style>
-</head>
-<body class="home-template nav-closed">
-
-<div class="site-wrapper">
-
-    <header class="main-header" style="background-image: url(/ualtransfiere/assets/images/back.jpg)">
-        <nav class="main-nav overlay clearfix">
-            <ul class="nav">
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#contenido">Contenido</a></li>
-            </ul>
-        </nav>
-        <div class="vertical">
-            <div class="main-header-content inner">
-                <h1 class="page-title">Interoperabilidad Empresarial</h1>
-                <h2 class="page-description">Proyecto Microdata</h2>
-            </div>
+  </head>
+  <body class="home-template nav-closed">
+    <!-- HEADER CON IMAGEN DE FONDO -->
+    <header
+      class="main-header"
+      style="background-image: url(/ualtransfiere/assets/images/back.jpg)"
+    >
+      <nav class="main-nav overlay clearfix">
+        <ul class="nav">
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contenido">Contenido</a></li>
+        </ul>
+      </nav>
+      <div class="vertical">
+        <div class="main-header-content inner">
+          <h1>
+            Diseño de Servicios de Interconexión e Interoperabilidad para la
+            comunicación de desarrollos Software empresariales
+          </h1>
+          <h1>Microdata</h2>
         </div>
+      </div>
     </header>
 
     <main id="content" class="content" role="main">
+      <article class="post">
+        <section class="post-content" id="contenido">
+          <!-- PORTADA Y TÍTULO -->
+          <section id="portada" style="text-align: center; margin-bottom: 40px">
+            <h1>
+              Diseño de Servicios de Interconexión e Interoperabilidad para la
+              comunicación de desarrollos Software empresariales
+            </h1>
+          <section id="financiado">
+            <div class="financiadores">
+              <!-- Patrocinador 1: Cegid -->
+              <div class="financiador">
+                <img
+                  src="/ualtransfiere/assets/images/logo-microdata.jpg"
+                  alt="Logo Cegid"
+                />
+                <p><strong>Cegid - Microdata</strong>.</p>
+                <p>
+                  <a href="https://www.cegid.com" target="_blank"
+                    >Cegid - Microdata</a
+                  >
+                </p>
+              </div>
+              <!-- Patrocinador 2: Universidad de Almería -->
+              <div class="financiador">
+                <img
+                  src="/ualtransfiere/assets/images/logo-ual.png"
+                  alt="Logo Universidad de Almería"
+                />
+                <p>
+                 <strong>Universidad de Almería</strong>.
+                </p>
+                <p><a href="https://www.ual.es" target="_blank">ual.es</a></p>
+              </div>
+            </div>
+          </section>
+          </section>
 
-        <article class="post">
-            <section class="post-content" id="contenido">
-                <h2>Diseño de Servicios de Interconexión e Interoperabilidad</h2>
-                <p>La empresa de software Microdata está desarrollando un <strong>portal del empleado</strong> para mejorar la comunicación interna de recursos humanos, descentralizar tareas administrativas y conectar con otras plataformas clave como <strong>efirma GO</strong> y <strong>Ejornada</strong>. El objetivo es implementar una solución robusta y eficiente que garantice <em>interoperabilidad</em> entre distintos sistemas empresariales.</p>
+          <!-- RESUMEN -->
+          <h2>Resumen</h2>
+          <p>
+            La empresa de software Microdata está desarrollando un portal del
+            empleado y para dotar de funcionalidad algunas de las áreas del
+            mismo necesita conectarse con otras aplicaciones previamente
+            desarrolladas. Este proyecto, marca como objetivo del estudiar la
+            interoperabilidad que podría tener con otras aplicaciones o
+            plataformas como son un software de firma de documentos y un
+            software de registro de jornada, y definir cómo se pueden realizar
+            estas conexiones para las condiciones específicas de la empresa.
+            Primero, habrá que estudiar las aplicaciones o programas que la
+            empresa quiere conectar al portal del empleado. A partir de ahí, se
+            decidirá cuáles son los mejores métodos para diseñar e implementar
+            estas interconexiones. El equipo investigador y el becario de
+            transferencia serán los encargados principales de llevar a cabo este
+            estudio con trabajos cooperativos e individuales, analizando siempre
+            desde un punto de vista crítico, lógico y acorde a las necesidades
+            de la empresa intentando optimizar la solución de intermediación
+            desde el punto de vista de escalabilidad, seguridad, robustez,
+            simplicidad y tiempo de desarrollo.
+          </p>
 
-                <h3>Objetivos del Proyecto</h3>
-                <ul>
-                    <li>Diseñar e implementar un sistema de interconexión eficaz entre el portal del empleado y otras aplicaciones clave.</li>
-                    <li>Validar empíricamente la arquitectura de interoperabilidad mediante pruebas piloto.</li>
-                    <li>Producir una guía técnica y un plan de trabajo para su implementación final.</li>
-                    <li>Optimizar en escalabilidad, seguridad, robustez, simplicidad y tiempo de desarrollo.</li>
-                </ul>
+          <!-- ARQUITECTURA DEL PROYECTO -->
+          <h2 id="arquitectura">Arquitectura del Proyecto</h2>
+          <img
+            src="/ualtransfiere/assets/images/microdata_interconexion.png"
+            alt="Diagrama de arquitectura del proyecto"
+            style="max-width: 300px; width: 100%; height: auto"
+          />
 
-                <h3>Aplicaciones Clave</h3>
-                <ul>
-                    <li><strong>efirma GO:</strong> Solución de firma digital para la gestión instantánea de documentos.</li>
-                    <li><strong>Ejornada:</strong> Plataforma para el registro obligatorio de jornada laboral.</li>
-                </ul>
+          <!-- OBJETIVOS -->
+          <h2 id="objetivos">Objetivos</h2>
+          <ul>
+            <li>
+              Diseñar e implementar un sistema de interconexión eficaz entre el
+              portal del empleado y otras aplicaciones clave.
+            </li>
+            <li>
+              Validar empíricamente la arquitectura de interoperabilidad
+              mediante pruebas piloto.
+            </li>
+            <li>
+              Producir una guía técnica y un plan de trabajo para su
+              implementación final.
+            </li>
+            <li>
+              Optimizar en escalabilidad, seguridad, robustez, simplicidad y
+              tiempo de desarrollo.
+            </li>
+          </ul>
 
-                <h3>Resultados Esperados</h3>
-                <p>El proyecto dará como resultado una propuesta validada de interoperabilidad para Microdata, junto con una guía práctica para implementar servicios web que conecten software empresarial diverso de forma segura y eficiente.</p>
+          <!-- INVESTIGADOR PRINCIPAL -->
+          <h2 id="ip">Investigador Principal (IP)</h2>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              flex-wrap: wrap;
+            "
+          >
+            <img
+              src="/ualtransfiere/assets/images/members/javier.jpg"
+              alt="Javier Criado Rodríguez"
+              style="
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                object-fit: cover;
+              "
+            />
+            <div>
+              <h3>Javier Criado Rodríguez</h3>
+              <p><em>Doctor</em></p>
+              <p>
+                Javier Criado Rodríguez es Profesor Titular de Universidad en el
+                área de Lenguajes de Sistemas Informáticos (LSI) del
+                Departamento de Informática de la Universidad de Almería (UAL).
+                Anteriormente, en 2022 desempeñó el cargo de Profesor Contratado
+                Doctor, de 2019 a 2022, desempeñó el cargo de Profesor Ayudante
+                Doctor) en la misma área. Titulado como Ingeniero en Informática
+                en 2009 en la Universidad de Almería con una nota de expediente
+                de 2’58. Obtuvo el premio al mejor Proyecto Fin de Carrera
+                (Ingeniería Informática-curso 2009/2010), premio concedido por
+                la UAL. Ese mismo año se unió al grupo de investigación de
+                Informática Aplicada (TIC-211) de la misma universidad. En 2010
+                obtuvo el título de Máster en Técnicas Informáticas Avanzadas en
+                la Universidad de Almería con una nota de expediente de 3’00. En
+                2011 consiguió una beca FPU con referencia AP2010-3259 y la
+                duración de la misma fue de 4 años. A finalizar dicho período,
+                obtuvo el título de Doctor Internacional en Informática con la
+                defensa de su tesis doctoral en la que recibió una calificación
+                de Sobresaliente “Cum Laude”. Durante la realización de la tesis
+                doctoral realizó una estancia de tres meses en el grupo de
+                investigación AtlanMod de la École des Mines de Nantes (Francia)
+                completando su formación e investigación en técnicas de
+                ingeniería basada en modelos. Para la realización de la
+                estancia, obtuvo una ayuda del programa FPU con referencia
+                Est13/00078. Ha sido Investigador Principal de un proyecto
+                regional (CEIJ-C01.2, CEI·MAR, 24 meses), Investigador Principal
+                de un proyecto local de transferencia tecnológica (24 meses), e
+                Investigador Principal de un proyecto de colaboración con la
+                administración local (8 meses). Ha participado en seis proyectos
+                de investigación nacionales (refs. TIN2007-61497, TRA2009-0309,
+                TIN2010-15588, TIN2013-41576-R, TIN2017-83964-R y
+                PID2021-124124OB-I00), dos proyectos de investigación regionales
+                (refs. P10-TIC-6114 y P20_00809), y un proyecto de investigación
+                local (Observatorio Estadístico para el Ayuntamiento de
+                Almería), además de participar en otras redes nacionales de
+                investigación. Ha codirigido tres tesis doctorales en los años
+                2016, 2021 y 2023, cuya calificación fue de Sobresaliente “Cum
+                Laude”. Es autor de dos capítulos de libros que recogen
+                resultados de investigaciones científicas o tecnológicas, uno en
+                2011 y otro en 2013. Sus labores de investigación han resultado
+                en 25 publicaciones en artículos de revista con impacto JCR, de
+                los cuales 10 están indexados en el primer cuartil (Q1), 8 están
+                indexados en el segundo cuartil (Q2), 6 están indexados en el
+                tercer cuartil (Q3), y 1 está indexada en el último cuartil
+                (Q4). Además, es autor de dos publicaciones en revistas
+                científicas incluidas en el ranking SJR, una indexada en el
+                segundo cuartil (Q2) y otra en el tercer cuartil (Q3). Ha
+                participado en 34 comunicaciones en actas de congresos
+                internacionales y en 20 comunicaciones en actas de congresos
+                nacionales. Sus principales áreas de investigación son:
+                ingeniería del software, computación orientada a servicios,
+                model-driven engineering, component-based software engineering,
+                interfaces de usuario, arquitecturas orientadas a servicios,
+                microservicios y web of things.
+              </p>
+              <p>
+                Enlaces:
+                <a href="https://dblp.org/pid/92/7872.html" target="_blank"
+                  >DBLP</a
+                >
+                |
+                <a
+                  href="https://www.ual.es/persona/525353565157505083"
+                  target="_blank"
+                  >UAL</a
+                >
+                |
+                <a
+                  href="https://scholar.google.es/citations?user=4f9cI34AAAAJ"
+                  target="_blank"
+                  >Google Scholar</a
+                >
+                |
+                <a
+                  href="https://www.ual.es/persona/525353565157505083"
+                  target="_blank"
+                  >ACG</a
+                >
+              </p>
+            </div>
+          </div>
 
-                <h3 id="equipo">Equipo Investigador</h3>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="/ualtransfiere/assets/images/members/javier.jpg" alt="Javier Criado Rodríguez">
-                        <p><strong>Javier Criado Rodríguez (IP)</strong><br>Investigador Postdoctoral</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="/ualtransfiere/assets/images/members/rosa.jpg" alt="Rosa María Ayala Palenzuela">
-                        <p><strong>Rosa María Ayala Palenzuela</strong><br>Profesora Titular</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="/ualtransfiere/assets/images/members/luis.jpg" alt="Luis Fernando Iribarne Martínez">
-                        <p><strong>Luis Fernando Iribarne Martínez</strong><br>Profesor Titular</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="/ualtransfiere/assets/images/members/antonio-jesus.png" alt="Antonio Jesús Fernández García">
-                        <p><strong>Antonio Jesús Fernández García</strong><br>Investigador Postdoctoral</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="/ualtransfiere/assets/images/members/antonio-corral.jpg" alt="Antonio Leopoldo Corral Liria">
-                        <p><strong>Antonio Leopoldo Corral Liria</strong><br>Profesor Titular</p>
-                    </div>
-                </div>
+          <!-- EQUIPO DE INVESTIGACIÓN -->
+          <h2 id="equipo">Equipo de Investigación</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <img
+                src="/ualtransfiere/assets/images/members/rosa.jpg"
+                alt="Rosa María Ayala Palenzuela"
+              />
+              <p>
+                <strong>Rosa María Ayala Palenzuela</strong><br />Doctora<br />
+                <a
+                  href="https://www.ual.es/persona/515256515657515071"
+                  target="_blank"
+                  >Perfil UAL</a
+                >
+              </p>
+            </div>
+            <div class="team-member">
+              <img
+                src="/ualtransfiere/assets/images/members/luis.jpg"
+                alt="Luis Fernando Iribarne Martínez"
+              />
+              <p>
+                <strong>Luis Fernando Iribarne Martínez</strong
+                ><br />Doctor<br />
+                <a
+                  href="https://www.ual.es/persona/515256525256485188"
+                  target="_blank"
+                  >Perfil UAL</a
+                >
+              </p>
+            </div>
+            <div class="team-member">
+              <img
+                src="/ualtransfiere/assets/images/members/antonio-jesus.png"
+                alt="Antonio Jesús Fernández García"
+              />
+              <p>
+                <strong>Antonio Jesús Fernández García</strong
+                ><br />Doctor<br />
+                <a
+                  href="https://www.ual.es/persona/505150565357535081"
+                  target="_blank"
+                  >Perfil UAL</a
+                >
+              </p>
+            </div>
+            <div class="team-member">
+              <img
+                src="/ualtransfiere/assets/images/members/antonio-corral.jpg"
+                alt="Antonio Leopoldo Corral Liria"
+              />
+              <p>
+                <strong>Antonio Leopoldo Corral Liria</strong><br />Doctor<br />
+                <a
+                  href="https://www.ual.es/persona/535053495455555565"
+                  target="_blank"
+                  >Perfil UAL</a
+                >
+              </p>
+            </div>
+          </div>
 
-                <h3>Becario de Transferencia</h3>
-                <p><strong>Cristian Abel Loza Casillas</strong><br>Participa en todas las fases del proyecto: análisis, pruebas y documentación. Adquiere competencias en desarrollo de servicios web y gestión de proyectos.</p>
-                <h3>Cronograma del Proyecto</h3>
-                <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
-                    <thead>
-                        <tr>
-                            <th>Fase</th>
-                            <th>Mes 1-3</th>
-                            <th>Mes 4-8</th>
-                            <th>Mes 9-12</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Análisis Inicial</td>
-                            <td>✔️</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Estudio de Implementación</td>
-                            <td></td>
-                            <td>✔️</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Propuesta Final</td>
-                            <td></td>
-                            <td></td>
-                            <td>✔️</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h3>Información Técnica Adicional</h3>
-                <ul>
-                    <li>El proyecto no contempla protección industrial o patentes.</li>
-                    <li>Se validará una arquitectura basada en <strong>servicios web</strong> para asegurar la interoperabilidad.</li>
-                    <li>Se utilizarán entornos de desarrollo en la <strong>Universidad de Almería</strong> y se contará con infraestructura en la nube.</li>
-                    <li>El presupuesto total asciende a <strong>37.400€</strong>, con cofinanciación de la UAL y la empresa Microdata.</li>
-                    <li>El becario adquirirá habilidades en <em>análisis de servicios web</em>, <em>desarrollo backend</em> y <em>gestión de proyectos</em>.</li>
-                </ul>
-                
-            </section>
-        </article>
+          <!-- TRANSFERENCIA CONSEGUIDA -->
+          <h2 id="transferencia">Transferencia Conseguida</h2>
+          <p>
+            El proyecto desarrollado ha permitido una transferencia efectiva de
+            conocimiento desde el ámbito universitario hacia el sector
+            empresarial, concretamente en el área de la ingeniería del software
+            y la interoperabilidad de sistemas. Gracias a la colaboración entre
+            el equipo de investigación de la Universidad de Almería y la empresa
+            Microdata, se ha logrado: Diseñar una arquitectura de interconexión
+            adaptada a las necesidades reales de una empresa de desarrollo de
+            software, permitiendo la integración eficiente de su portal del
+            empleado con herramientas externas clave como firmas electrónicas
+            (efirma GO) y sistemas de control horario (Ejornada). Proporcionar
+            una guía técnica validada, fruto de un estudio riguroso y una
+            implementación de prueba, que permite replicar el modelo de
+            interoperabilidad en otros entornos similares. Mejorar la capacidad
+            innovadora de la empresa, reduciendo la dependencia de desarrollos
+            ad hoc y facilitando futuras integraciones gracias a un modelo
+            escalable, seguro y robusto. Formar a talento joven mediante la beca
+            de transferencia, dotando al becario de competencias especializadas
+            en proyectos reales de alto impacto, y reforzando el vínculo
+            universidad-empresa. Transferir metodologías de análisis y
+            desarrollo de servicios web basadas en buenas prácticas académicas,
+            aplicadas con éxito al contexto y las prioridades empresariales
+            concretas. Este proyecto representa un ejemplo de éxito de cómo la
+            colaboración público-privada puede impulsar la digitalización y la
+            eficiencia en empresas tecnológicas a través de la transferencia de
+            conocimiento aplicado.
+          </p>
 
+          <!-- FINANCIADO POR -->
+          <section id="financiado">
+            <h2>Cofinanciado Por</h2>
+            <div class="financiadores">
+              <!-- Patrocinador 1: Cegid -->
+              <div class="financiador">
+                <img
+                  src="/ualtransfiere/assets/images/logo-microdata.jpg"
+                  alt="Logo Cegid"
+                />
+                <p>Cofinanciado por <strong>Cegid - Microdata</strong>.</p>
+                <p>
+                  <a href="https://www.cegid.com" target="_blank"
+                    >Cegid - Microdata</a
+                  >
+                </p>
+              </div>
+              <!-- Patrocinador 2: Universidad de Almería -->
+              <div class="financiador">
+                <img
+                  src="/ualtransfiere/assets/images/logo-ual.png"
+                  alt="Logo Universidad de Almería"
+                />
+                <p>
+                  Cofinanciado por la <strong>Universidad de Almería</strong>.
+                </p>
+                <p><a href="https://www.ual.es" target="_blank">ual.es</a></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACTO -->
+          <h2 id="contacto">Contacto</h2>
+          <p><strong>Javier Criado Rodríguez</strong></p>
+          <p>
+            Email:
+            <a href="mailto:javier.criado@ual.es">javier.criado@ual.es</a>
+          </p>
+          <p>
+            Dirección: Campus de La Cañada, Ctra. Sacramento s/n, 04120
+            Almería.<br />Despacho 123, Edificio de Ciencias Experimentales.
+          </p>
+        </section>
+      </article>
     </main>
 
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="/ualtransfiere/">Interoperabilidad Empresarial</a> &copy; 2025</section>
-        <section class="poweredby">Publicado con <a href="https://jekyllrb.com/">Jekyll</a></section>
+      <section class="poweredby">
+        Publicado con <a href="https://jekyllrb.com/">Jekyll</a>
+      </section>
     </footer>
 
-</div>
-
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="/ualtransfiere/assets/js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="/ualtransfiere/assets/js/index.js"></script>
-
-</body>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/ualtransfiere/assets/js/jquery.fitvids.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/ualtransfiere/assets/js/index.js"
+    ></script>
+  </body>
 </html>
